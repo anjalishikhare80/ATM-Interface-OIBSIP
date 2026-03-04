@@ -13,6 +13,8 @@ public class MainATM {
         System.out.print("Enter PIN: ");
         int pin = sc.nextInt();
 
+        sc.close();
+
         if (user.validate(uid, pin)) {
             int choice;
             do {
