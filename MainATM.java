@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class MainATM {
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -13,7 +14,7 @@ public class MainATM {
         System.out.print("Enter PIN: ");
         int pin = sc.nextInt();
 
-        sc.close();
+        
 
         if (user.validate(uid, pin)) {
             int choice;
